@@ -232,7 +232,7 @@ const Overlay = styled.div`
 
     :hover {
         opacity: 0.9;
-        cursor: pointer;
+        // cursor: pointer;
         background-color: var(--clr-dark);
     }
 `;
@@ -260,11 +260,11 @@ const Desc = styled.div`
     font-weight: lighter;
     padding-bottom: 5px;
 `;
-const Button = styled.button`
+const Button = styled.a`
     background-color: white;
     border: none;
     color: var(--clr-dark);
-    padding: 10px 10px;
+    padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -276,6 +276,7 @@ const Button = styled.button`
     opacity: 0.5;
 
     :hover {
+        color: var(--clr-dark);
         opacity: 1;
         transition: opacity 0.5s linear;
     }

@@ -100,10 +100,10 @@ const Section = styled.div`
     align-items: center;
     justify-content: center;
     max-width: 700px;
-    margin: 2rem auto 150px auto;
+    margin: 2rem auto 120px auto;
     
     @media only screen and (max-width: 768px){
-        margin 0 auto 0 auto;
+        margin 2rem auto 1rem auto;
     }
 `;
 const Wrap = styled.svg`

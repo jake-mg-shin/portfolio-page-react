@@ -30,7 +30,7 @@ const About = () => {
                 <Skills>
                     <Skill1>
                         <Icon className='far fa-file-code'></Icon>
-                        <SkillTitle>Front-End</SkillTitle>
+                        <SkillTitle>Front-End Developer</SkillTitle>
                         <SkillDesc>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Quisquam ratione quo, obcaecati modi saepe
@@ -42,7 +42,7 @@ const About = () => {
                     </Skill1>
                     <Skill2>
                         <Icon className='fas fa-database'></Icon>
-                        <SkillTitle>Back-End</SkillTitle>
+                        <SkillTitle>Back-End Developer</SkillTitle>
                         <SkillDesc>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Quisquam ratione quo, obcaecati modi saepe
@@ -54,7 +54,7 @@ const About = () => {
                     </Skill2>
                     <Skill3>
                         <Icon className='fab fa-connectdevelop'></Icon>
-                        <SkillTitle>Design</SkillTitle>
+                        <SkillTitle>Web Development</SkillTitle>
                         <SkillDesc>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Quisquam ratione quo, obcaecati modi saepe
@@ -110,7 +110,7 @@ const Desc = styled.p`
     color: var(--clr-light);
 `;
 const Icon1 = styled.i`
-    font-size: 3em;
+    font-size: 2.5em;
     padding: 1rem;
     color: var(--clr-light);
     @media only screen and (max-width: 768px) {
