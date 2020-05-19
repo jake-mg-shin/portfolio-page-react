@@ -1,16 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Container } from 'semantic-ui-react';
 
 const Cover = () => {
     return (
         <CoverWrapper>
-            <TitleText>
-                Hi, my name is Jake. <br /> I am a Web Developer.
-            </TitleText>
-            <SubText>
-                Passionate, Self-Motivated, and Energized Developer in the
-                world.
-            </SubText>
+            <Container>
+                <TitleText>
+                    Hi, my name is Jake. <br /> I am a Web Developer.
+                </TitleText>
+                <SubText>
+                    Passionate, Self-Motivated, and Energized Developer in the
+                    world.
+                </SubText>
+            </Container>
         </CoverWrapper>
     );
 };
@@ -19,14 +22,18 @@ export default Cover;
 const CoverWrapper = styled.div`
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-
-    text-align: center;
     background-color: white;
+
+    @media only screen and (max-width: 768px) {
+        height: 200px;
+    }
 `;
 const TitleText = styled.p`
     font-family: var(--ff-secondary);
@@ -34,15 +41,21 @@ const TitleText = styled.p`
     font-weight: var(--fw-bold);
     margin-bottom: 20px;
     padding-top: 100px;
+
+    @media only screen and (max-width: 1024px) {
+        padding-top: 50px;
+    }
+    @media only screen and (max-width: 768px) {
+        padding-top: 0px;
+    }
 `;
 const SubText = styled.p`
     font-family: var(--ff-primary);
-    font-size: var(--fs-h3);
-    font-weight: var(--fw-light);
+    font-size: var(--fs-body);
+    font-weight: lighter;
     color: var(--clr-dark);
-
-    animation: 2s fadein 2s forwards;
     opacity: 0;
+    animation: 2s fadein 2s forwards;
 
     @keyframes fadein {
         100% {

@@ -10,15 +10,14 @@
     --ff-third: 'eurostile', sans-serif;
     --ff-forth: 'europa', sans-serif;
 
-    --fw-light: 100;
-    --fw-reg: 300;
-    --fw-medium: 600;
-    --fw-bold: 900;
+    --fw-reg: 400;
+    --fw-bold: 700;
 
     --clr-light: #fff;
     --clr-dark: rgb(32, 23, 77);
     --clr-accent: rgb(58, 174, 139);
-    --clr-warning: #e74c3c;
+    --clr-danger: #e74c3c;
+    --clr-warning: #fdbb2d;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -26,13 +25,13 @@
     --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
-        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+        0.125em 0.125em 0.25em rgba(3, 3, 3, 0.15);
 }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 2rem;
-        --fs-body: 1.125rem;
+        --fs-body: 1.5rem;
     }
 }

@@ -15,7 +15,7 @@ const Navbar = () => {
                 <Nav>
                     <NavItem href='#'>Home</NavItem>
                     <NavItem href='#about'>About</NavItem>
-                    <NavItem href='#'>Project</NavItem>
+                    <NavItem href='#'>Projects</NavItem>
                     <NavItem href='#'>HireMe</NavItem>
                 </Nav>
             </Container>
@@ -41,18 +41,17 @@ const LogoWrapper = styled.a`
 const LogoImg = styled.img`
     max-width: 35px;
     margin-right: 10px;
-
-    @media (min-width: 800px) {
-        max-width: 45px;
-    }
+    transition: transform 0.4s linear;
+    transform: rotate(0deg);
 
     :hover {
         transition: transform 0.4s linear;
         transform: rotate(90deg);
     }
 
-    transition: transform 0.4s linear;
-    transform: rotate(0deg);
+    @media only screen and (min-width: 800px) {
+        max-width: 45px;
+    }
 `;
 const LogoName = styled.p`
     font-size: var(--fs-h3);
@@ -75,15 +74,16 @@ const Nav = styled.div`
 `;
 const NavItem = styled.a`
     color: black;
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.5em 1em;
     border: 1px solid var(--clr-light);
     border-radius: 5px;
+    border-color: var(--clr-light);
+    transition: border 0.2s ease-in-out;
 
     :hover {
         color: black;
+        background-color: #fdcb6e;
         border-color: var(--clr-warning);
         transition: border 0.5s ease-in-out;
     }
-    border-color: var(--clr-light);
-    transition: border 0.2s ease-in-out;
 `;

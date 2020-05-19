@@ -38,7 +38,7 @@ const Graph = () => {
 
     useEffect(() => {
         const svg = select(svgRef.current);
-        console.log(dimensions);
+        // console.log(dimensions);
 
         if (!dimensions) return;
 
@@ -99,12 +99,16 @@ const Section = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 700px;
+    max-width: 700px;
     margin: 2rem auto 150px auto;
+    
+    @media only screen and (max-width: 768px){
+        margin 0 auto 0 auto;
+    }
 `;
 const Wrap = styled.svg`
-    background: white;
-    overflow: visible !important;
-    margin-bottom: 2rem;
     display: block;
+    overflow: visible !important;
+    background: white;
+    margin-bottom: 2rem;
 `;
