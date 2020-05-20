@@ -2,11 +2,13 @@ import React, { Fragment } from 'react';
 import { Container, Divider } from 'semantic-ui-react';
 import styled from 'styled-components';
 
+import Pdf from '../documents/JakeShin_Resume.pdf';
+
 const Contact = () => {
     return (
         <Fragment>
             <Divider />
-            <Wrapper>
+            <Wrapper id='contact'>
                 <Title>Let's Work Together</Title>
                 <SubTitle>I am ready to work with you!</SubTitle>
             </Wrapper>
@@ -14,7 +16,12 @@ const Contact = () => {
             <Wrapper2>
                 <Container>
                     <ContactMe>
-                        <Button>EmailMe</Button>
+                        <Button
+                            target='_blank'
+                            href='mailto:jake.mg.shin@gmail.com'
+                        >
+                            EmailMe
+                        </Button>
                         <Header>
                             <Text>
                                 <span role='img' aria-label='arrow-right'>
@@ -30,7 +37,9 @@ const Contact = () => {
                                 </span>
                             </Text>
                         </Header>
-                        <Button>Resume</Button>
+                        <Button href={Pdf} target='_blank'>
+                            Resume
+                        </Button>
                     </ContactMe>
                 </Container>
             </Wrapper2>
@@ -45,7 +54,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     text-align: center;
     width: 100%;
-    height: 275px;
+    height: 250px;
 `;
 const Title = styled.p`
     display: flex;
@@ -120,11 +129,11 @@ const Text = styled.div`
     padding: 5px;
     line-height: 30px;
 `;
-const Button = styled.button`
+const Button = styled.a`
     border: 2px solid var(--clr-accent);
     border-radius: 30px;
     background-color: var(--clr-dark);
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     font-family: var(--ff-secondary);
     font-size: var(--fs-body);
     font-weight: lighter;
@@ -132,6 +141,7 @@ const Button = styled.button`
     transition: background 0.3s linear;
 
     :hover {
+        color: white;
         background-color: var(--clr-accent);
         cursor: pointer;
         transition: background 0.5s linear;

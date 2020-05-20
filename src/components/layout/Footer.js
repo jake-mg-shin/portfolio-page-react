@@ -12,8 +12,20 @@ const Footer = () => {
                 >
                     <Icon className='fab fa-linkedin-in' />
                 </a>
-                <Icon className='fab fa-github'></Icon>
-                <Icon className='far fa-envelope'></Icon>
+                <a
+                    href='https://github.com/jake-mg-shin'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    <Icon className='fab fa-github' />
+                </a>
+                <a
+                    href='mailto:jake.mg.shin@gmail.com'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    <Icon className='far fa-envelope' />
+                </a>
             </IconWrap>
             <Text>© 2020 Dev.JakeShin. All rights reserved</Text>
         </Wrapper>
@@ -63,7 +75,7 @@ const Icon = styled.i`
         padding: 0.5rem;
     }
 `;
-const Text = styled.a`
+const Text = styled.div`
     display: flex;
     font-size: 14px;
     color: white;

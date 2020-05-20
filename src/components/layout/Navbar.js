@@ -1,40 +1,64 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
 import styled from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import logo from '../images/logo.png';
 
 const Navbar = () => {
+    const refreshPage = () => {
+        window.location.reload();
+    };
+
     return (
-        <NavBar>
-            <Container>
-                <LogoWrapper href='#'>
+        <Container>
+            <NavBar>
+                <LogoWrapper href='#' onClick={refreshPage}>
                     <LogoImg src={logo} />
                     <LogoName>Dev.JS</LogoName>
                 </LogoWrapper>
                 <Nav>
-                    <NavItem href='#'>Home</NavItem>
-                    <NavItem href='#about'>About</NavItem>
-                    <NavItem href='#'>Projects</NavItem>
-                    <NavItem href='#'>Contact</NavItem>
+                    <NavItem onClick={refreshPage}>Home</NavItem>
+                    <AnchorLink href='#about'>
+                        <NavItem>About</NavItem>
+                    </AnchorLink>
+                    <AnchorLink href='#project'>
+                        <NavItem>Projects</NavItem>
+                    </AnchorLink>
+                    <AnchorLink href='#contact'>
+                        <NavItem>Contact</NavItem>
+                    </AnchorLink>
                 </Nav>
-            </Container>
-        </NavBar>
+            </NavBar>
+        </Container>
     );
 };
 export default Navbar;
 
 const NavBar = styled.div`
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // text-align: center;
+    // position: relative;
     margin-top: 1em;
     width: 100%;
-    height: 50px;
+    height: auto;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 480px) {
+        flex-direction: column;
+        // text-align: left;
+    }
 `;
 const LogoWrapper = styled.a`
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     align-items: center;
-    float: left;
+    text-align: left;
+    width: 100%;
+    // float: left;
     padding-top: 1em;
     padding-bottom: 1em;
 `;
@@ -62,25 +86,30 @@ const Nav = styled.div`
     display: flex;
     list-style: none;
     height: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+    // flex-direction: row;
+    // justify-content: space-evenly;
     align-items: center;
-    float: right;
-    padding: 1rem;
+    // float: right;
 
     font-family: var(--ff-secondary);
     font-size: var(--fs-h3);
     font-weight: var(--fw-light);
+
+    // @media only screen and (max-width: 414px) {
+    //     flex-direction: column;
+
+    // }
 `;
-const NavItem = styled.a`
+const NavItem = styled.div`
     color: black;
-    padding: 0.5em 1em;
+    padding: 0.5rem;
     border: 1px solid var(--clr-light);
     border-radius: 5px;
     border-color: var(--clr-light);
     transition: border 0.2s ease-in-out;
 
     :hover {
+        cursor: pointer;
         color: black;
         background-color: #fdcb6e;
         border-color: var(--clr-warning);

@@ -1,11 +1,16 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { Container } from 'semantic-ui-react';
+import { Modal, Label } from 'semantic-ui-react';
 
-import p1 from '../images/project1.png';
-import p2 from '../images/project2.png';
-import p3 from '../images/project3.png';
-import p4 from '../images/project4.png';
+import p1 from '../images/project1_1.png';
+import p2 from '../images/project2_1.png';
+import p3 from '../images/project3_1.png';
+import p4 from '../images/project4_1.png';
+import Carousel1 from '../projects/Carousel1';
+import Carousel2 from '../projects/Carousel2';
+import Carousel3 from '../projects/Carousel3';
+import Carousel4 from '../projects/Carousel4';
 
 const Projects = () => {
     return (
@@ -18,8 +23,8 @@ const Projects = () => {
                         <Img src={p1} />
                         <Overlay>
                             <Content>
-                                <Header>To-Do List</Header>
-                                <Desc>
+                                <CardTitle>To-Do List</CardTitle>
+                                <CardDesc>
                                     <div>
                                         <span
                                             role='img'
@@ -33,9 +38,65 @@ const Projects = () => {
                                         <i className='fab fa-js-square'></i>
                                         &nbsp; Built with Vanilla JavaScript
                                     </div>
-                                </Desc>
+                                </CardDesc>
                                 <Fragment>
-                                    <Button>Learn More</Button>
+                                    <Modal
+                                        trigger={<Button>Learn More</Button>}
+                                        closeIcon
+                                    >
+                                        <Modal.Header>To-Do List</Modal.Header>
+                                        <Modal.Content>
+                                            <Modal.Description>
+                                                <div
+                                                    style={{ fontSize: '16px' }}
+                                                >
+                                                    <div>
+                                                        <span
+                                                            role='img'
+                                                            aria-label='arrow-right'
+                                                        >
+                                                            ☑️
+                                                        </span>
+                                                        Built by Vanilla
+                                                        JavaScript with
+                                                        LocalStorage and Open
+                                                        Weather App API.
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            role='img'
+                                                            aria-label='arrow-right'
+                                                        >
+                                                            🖥
+                                                        </span>
+                                                        <a
+                                                            href='https://jake-mg-shin.github.io/to-do-list-v1/'
+                                                            target='_blank'
+                                                            rel='noopener noreferrer'
+                                                        >
+                                                            Visit Website
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <LabelWrapper>
+                                                    <Label color='red'>
+                                                        HTML
+                                                    </Label>
+                                                    <Label color='blue'>
+                                                        CSS
+                                                    </Label>
+                                                    <Label color='yellow'>
+                                                        JavaScript
+                                                    </Label>
+                                                    <Label color='brown'>
+                                                        Github
+                                                    </Label>
+                                                </LabelWrapper>
+                                            </Modal.Description>
+                                        </Modal.Content>
+                                        <Carousel1 />
+                                    </Modal>
+
                                     <Button
                                         href='https://jake-mg-shin.github.io/to-do-list-v1/'
                                         target='_blank'
@@ -50,8 +111,8 @@ const Projects = () => {
                         <Img src={p2} />
                         <Overlay>
                             <Content>
-                                <Header>Show Me Your Cat</Header>
-                                <Desc>
+                                <CardTitle>Show Me Your Cat</CardTitle>
+                                <CardDesc>
                                     <div>
                                         <span
                                             role='img'
@@ -68,9 +129,81 @@ const Projects = () => {
                                         ></i>
                                         &nbsp; Built with Node.js
                                     </div>
-                                </Desc>
+                                </CardDesc>
                                 <Fragment>
-                                    <Button>Learn More</Button>
+                                    <Modal
+                                        trigger={<Button>Learn More</Button>}
+                                        closeIcon
+                                    >
+                                        <Modal.Header>
+                                            Show Me Your Cat
+                                        </Modal.Header>
+                                        <Modal.Content>
+                                            <Modal.Description>
+                                                <div
+                                                    style={{ fontSize: '16px' }}
+                                                >
+                                                    <div>
+                                                        <span
+                                                            role='img'
+                                                            aria-label='arrow-right'
+                                                        >
+                                                            ☑️
+                                                        </span>
+                                                        Built with Node.js and
+                                                        Express.js. Used CRUD
+                                                        method and maintains
+                                                        Database with MongoDB.
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            role='img'
+                                                            aria-label='arrow-right'
+                                                        >
+                                                            🖥
+                                                        </span>
+                                                        <a
+                                                            href='https://show-me-your-cat-v1.herokuapp.com/'
+                                                            target='_blank'
+                                                            rel='noopener noreferrer'
+                                                        >
+                                                            Visit Website
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <LabelWrapper>
+                                                    <Label color='red'>
+                                                        HTML
+                                                    </Label>
+                                                    <Label color='blue'>
+                                                        CSS
+                                                    </Label>
+                                                    <Label color='yellow'>
+                                                        JavaScript
+                                                    </Label>
+                                                    <Label color='purple'>
+                                                        Bootstrap
+                                                    </Label>
+                                                    <Label color='olive'>
+                                                        Node.js
+                                                    </Label>
+                                                    <Label color='grey'>
+                                                        Express.js
+                                                    </Label>
+                                                    <Label color='brown'>
+                                                        Passport.js
+                                                    </Label>
+                                                    <Label color='green'>
+                                                        MongoDB
+                                                    </Label>
+                                                    <Label color='purple'>
+                                                        Heroku
+                                                    </Label>
+                                                </LabelWrapper>
+                                            </Modal.Description>
+                                        </Modal.Content>
+                                        <Carousel2 />
+                                    </Modal>
                                     <Button
                                         href='https://show-me-your-cat-v1.herokuapp.com/'
                                         target='_blank'
@@ -85,8 +218,8 @@ const Projects = () => {
                         <Img src={p3} />
                         <Overlay>
                             <Content>
-                                <Header>My Community Listing</Header>
-                                <Desc>
+                                <CardTitle>My Community Listing</CardTitle>
+                                <CardDesc>
                                     <div>
                                         <span
                                             role='img'
@@ -104,9 +237,78 @@ const Projects = () => {
                                         ></i>
                                         &nbsp; Built with React.js
                                     </div>
-                                </Desc>
+                                </CardDesc>
                                 <Fragment>
-                                    <Button>Learn More</Button>
+                                    <Modal
+                                        trigger={<Button>Learn More</Button>}
+                                        closeIcon
+                                    >
+                                        <Modal.Header>
+                                            My Community Listing
+                                        </Modal.Header>
+                                        <Modal.Content>
+                                            <Modal.Description>
+                                                <div
+                                                    style={{ fontSize: '16px' }}
+                                                >
+                                                    <div>
+                                                        <span
+                                                            role='img'
+                                                            aria-label='arrow-right'
+                                                        >
+                                                            ☑️
+                                                        </span>
+                                                        Built with React.js and
+                                                        used D3.js and Mapbox GL
+                                                        made this Web Template
+                                                        looks more interactive.
+                                                    </div>
+                                                    <div>
+                                                        <span
+                                                            role='img'
+                                                            aria-label='arrow-right'
+                                                        >
+                                                            🖥
+                                                        </span>
+                                                        <a
+                                                            href='https://jake-mg-shin.github.io/my-community-listing-v2/'
+                                                            target='_blank'
+                                                            rel='noopener noreferrer'
+                                                        >
+                                                            Visit Website
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <LabelWrapper>
+                                                    <Label color='red'>
+                                                        HTML
+                                                    </Label>
+                                                    <Label color='blue'>
+                                                        CSS
+                                                    </Label>
+                                                    <Label color='yellow'>
+                                                        JavaScript
+                                                    </Label>
+                                                    <Label color='teal'>
+                                                        React.js
+                                                    </Label>
+                                                    <Label color='orange'>
+                                                        D3.js
+                                                    </Label>
+                                                    <Label color='teal'>
+                                                        Semantic UI
+                                                    </Label>
+                                                    <Label color='yellow'>
+                                                        styled-components
+                                                    </Label>
+                                                    <Label color='brown'>
+                                                        Github
+                                                    </Label>
+                                                </LabelWrapper>
+                                            </Modal.Description>
+                                        </Modal.Content>
+                                        <Carousel3 />
+                                    </Modal>
                                     <Button
                                         href='https://jake-mg-shin.github.io/my-community-listing-v2/'
                                         target='_blank'
@@ -121,8 +323,8 @@ const Projects = () => {
                         <Img src={p4} />
                         <Overlay>
                             <Content>
-                                <Header>Portfolio Page</Header>
-                                <Desc>
+                                <CardTitle>Portfolio Page</CardTitle>
+                                <CardDesc>
                                     <div>
                                         <span
                                             role='img'
@@ -139,10 +341,62 @@ const Projects = () => {
                                         ></i>
                                         &nbsp; Built with React.js
                                     </div>
-                                </Desc>
+                                </CardDesc>
                                 <Fragment>
-                                    <Button>Learn More</Button>
-                                    <Button>See Project</Button>
+                                    <Modal
+                                        trigger={<Button>Learn More</Button>}
+                                        closeIcon
+                                    >
+                                        <Modal.Header>
+                                            Portfolio Page
+                                        </Modal.Header>
+                                        <Modal.Content>
+                                            <Modal.Description>
+                                                <div
+                                                    style={{ fontSize: '16px' }}
+                                                >
+                                                    <div>
+                                                        <span
+                                                            role='img'
+                                                            aria-label='arrow-right'
+                                                        >
+                                                            ☑️
+                                                        </span>
+                                                        Built with React.js.
+                                                        Expressed dynamic design
+                                                        by using D3.js and
+                                                        responsive web by
+                                                        flex-box and grid.
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <LabelWrapper>
+                                                    <Label color='red'>
+                                                        HTML
+                                                    </Label>
+                                                    <Label color='blue'>
+                                                        CSS
+                                                    </Label>
+                                                    <Label color='yellow'>
+                                                        JavaScript
+                                                    </Label>
+                                                    <Label color='teal'>
+                                                        React.js
+                                                    </Label>
+                                                    <Label color='orange'>
+                                                        D3.js
+                                                    </Label>
+                                                    <Label color='teal'>
+                                                        Semantic UI
+                                                    </Label>
+                                                    <Label color='yellow'>
+                                                        styled-components
+                                                    </Label>
+                                                </LabelWrapper>
+                                            </Modal.Description>
+                                        </Modal.Content>
+                                        <Carousel4 />
+                                    </Modal>
                                 </Fragment>
                             </Content>
                         </Overlay>
@@ -248,17 +502,20 @@ const Content = styled.div`
     transform: translate(-50%, -50%);
     text-align: left;
 `;
-const Header = styled.div`
+const CardTitle = styled.div`
     font-family: var(--ff-secondary);
     font-weight: bold;
     font-size: var(--fs-body);
     padding-bottom: 5px;
     word-spacing: -7px;
 `;
-const Desc = styled.div`
+const CardDesc = styled.div`
     font-size: 14px;
     font-weight: lighter;
     padding-bottom: 5px;
+`;
+const LabelWrapper = styled.div`
+    text-align: right;
 `;
 const Button = styled.a`
     background-color: white;

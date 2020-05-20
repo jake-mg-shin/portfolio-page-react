@@ -1,28 +1,21 @@
 import React, { Fragment } from 'react';
-import { Container, Divider } from 'semantic-ui-react';
+import { Container, Divider, Label } from 'semantic-ui-react';
 import styled from 'styled-components';
 
 const About = () => {
     return (
         <Fragment>
             <BackGround>
-                <Container>
+                <Container id='about'>
                     <Title>Glad to meet you!</Title>
                     <Desc>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Sit itaque adipisci nisi rem maxime neque saepe
-                        illo molestiae impedit eveniet distinctio odio similique
-                        quaerat, sed aspernatur temporibus, optio delectus iste.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Sit itaque adipisci nisi rem maxime neque saepe
-                        illo molestiae impedit eveniet distinctio odio similique
-                        quaerat, sed aspernatur temporibus, optio delectus iste.
+                        I have been Web Development industry since last year.
+                        Although I have experienced in Financial industry
+                        before, I truly enjoy to build my skills with huge
+                        passion. I am a volunteer as a Web Developer at ARK,
+                        which is a charity for kids who has accessibility, and
+                        looking for opportunities now.
                     </Desc>
-                    <Fragment>
-                        <Icon1 className='fab fa-html5 '></Icon1>
-                        <Icon1 className='fab fa-css3-alt '></Icon1>
-                        <Icon1 className='fab fa-js '></Icon1>
-                    </Fragment>
                 </Container>
             </BackGround>
 
@@ -30,43 +23,62 @@ const About = () => {
                 <Skills>
                     <Skill1>
                         <Icon className='far fa-file-code'></Icon>
-                        <SkillTitle>Front-End Developer</SkillTitle>
+                        <SkillTitle>Front-End</SkillTitle>
                         <SkillDesc>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam ratione quo, obcaecati modi saepe
-                            optio placeat quam, repellendus consectetur dicta ea
-                            excepturi. Sequi porro nesciunt dignissimos est
-                            nihil laborum a?
+                            Building interactive Web applications by using
+                            implemented visual elements. Always thinking for
+                            combining with Back-End side entirely.
                         </SkillDesc>
-                        <Tools>Tools</Tools>
+                        <Tools>Skills</Tools>
+                        <LabelWrapper>
+                            <Label color='red'>HTML</Label>
+                            <Label color='blue'>CSS</Label>
+                            <Label color='yellow'>JavaScript</Label>
+                            <Label color='grey'>jQuery</Label>
+                            <Label color='teal'>React.js</Label>
+                            <Label color='black'>Apollo</Label>
+                            <Label color='brown'>Github</Label>
+                        </LabelWrapper>
                     </Skill1>
                     <Skill2>
                         <Icon className='fas fa-database'></Icon>
-                        <SkillTitle>Back-End Developer</SkillTitle>
+                        <SkillTitle>Back-End</SkillTitle>
                         <SkillDesc>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam ratione quo, obcaecati modi saepe
-                            optio placeat quam, repellendus consectetur dicta ea
-                            excepturi. Sequi porro nesciunt dignissimos est
-                            nihil laborum a?
+                            Building effective server-side and structure for
+                            combining with Front-End side properly. Also
+                            maintaining data and API for Web application.
                         </SkillDesc>
-                        <Tools>Tools</Tools>
+                        <br />
+                        <Tools>Skills</Tools>
+                        <LabelWrapper>
+                            <Label color='olive'>Node.js</Label>
+                            <Label color='grey'>Express.js</Label>
+                            <Label color='brown'>Passport.js</Label>
+                            <Label color='pink'>GraphQL</Label>
+                            <Label color='green'>MongoDB</Label>
+                            <Label color='purple'>Heroku</Label>
+                            <Label color='black'>Zeit</Label>
+                        </LabelWrapper>
                     </Skill2>
                     <Skill3>
                         <Icon className='fab fa-connectdevelop'></Icon>
-                        <SkillTitle>Web Development</SkillTitle>
+                        <SkillTitle>Web Design</SkillTitle>
                         <SkillDesc>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam ratione quo, obcaecati modi saepe
-                            optio placeat quam, repellendus consectetur dicta ea
-                            excepturi. Sequi porro nesciunt dignissimos est
-                            nihil laborum a?
+                            Create the look, layout, and feature of Web sites
+                            and associated applications. Moreover trying to make
+                            a user friendly design.
                         </SkillDesc>
-                        <Tools>Tools</Tools>
+                        <Tools>Skills</Tools>
+                        <LabelWrapper>
+                            <Label color='orange'>D3.js</Label>
+                            <Label color='purple'>Bootstrap</Label>
+                            <Label color='teal'>Semantic UI</Label>
+                            <Label color='yellow'>styled-components</Label>
+                        </LabelWrapper>
                     </Skill3>
                 </Skills>
             </Container>
-            <Divider />
+            <Divider id='project' />
         </Fragment>
     );
 };
@@ -78,7 +90,7 @@ const BackGround = styled.div`
     justify-content: space-between;
     text-align: center;
     width: 100%;
-    height: 600px;
+    height: 500px;
     background: rgb(58, 174, 139);
     background: linear-gradient(
         0deg,
@@ -109,15 +121,7 @@ const Desc = styled.p`
     font-weight: lighter;
     color: var(--clr-light);
 `;
-const Icon1 = styled.i`
-    font-size: 2.5em;
-    padding: 1rem;
-    color: var(--clr-light);
-    @media only screen and (max-width: 768px) {
-        font-size: 1.7em;
-        padding: 0.5rem;
-    }
-`;
+
 const Skills = styled.div`
     box-sizing: border-box;
     max-width: 1200px;
@@ -139,6 +143,11 @@ const Skills = styled.div`
         max-width: 600px;
         margin-bottom: 3em;
     }
+`;
+const LabelWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 `;
 const Skill1 = styled.div`
     padding: 2em;

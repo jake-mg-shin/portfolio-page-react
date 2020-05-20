@@ -10,7 +10,7 @@ const Cover = () => {
                     Hi, my name is Jake. <br /> I am a Web Developer.
                 </TitleText>
                 <SubText>
-                    Passionate, Self-Motivated, and Energized Developer in the
+                    Passionate, Self-Motivated, and Energetic Developer in the
                     world.
                 </SubText>
             </Container>
@@ -32,7 +32,7 @@ const CoverWrapper = styled.div`
     background-color: white;
 
     @media only screen and (max-width: 768px) {
-        height: 200px;
+        height: 250px;
     }
 `;
 const TitleText = styled.p`
@@ -45,9 +45,9 @@ const TitleText = styled.p`
     @media only screen and (max-width: 1024px) {
         padding-top: 50px;
     }
-    @media only screen and (max-width: 768px) {
-        padding-top: 0px;
-    }
+    // @media only screen and (max-width: 768px) {
+    //     padding-top: 0px;
+    // }
 `;
 const SubText = styled.p`
     font-family: var(--ff-primary);
