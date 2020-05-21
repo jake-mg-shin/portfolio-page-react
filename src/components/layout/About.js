@@ -9,9 +9,9 @@ const About = () => {
                 <Container id='about'>
                     <Title>Glad to meet you!</Title>
                     <Desc>
-                        I have been Web Development industry since last year.
-                        Although I have experienced in Financial industry
-                        before, I truly enjoy to build my skills with huge
+                        I have learned the Web Development since last year.
+                        Although I have experienced in the Financial industry
+                        before, I genuinely enjoy building my skills with huge
                         passion. I am a volunteer as a Web Developer at ARK,
                         which is a charity for kids who has accessibility, and
                         looking for opportunities now.
@@ -25,9 +25,12 @@ const About = () => {
                         <Icon className='far fa-file-code'></Icon>
                         <SkillTitle>Front-End</SkillTitle>
                         <SkillDesc>
-                            Building interactive Web applications by using
-                            implemented visual elements. Always thinking for
-                            combining with Back-End side entirely.
+                            To build interactive Web applications by using
+                            implemented visual elements and always considering
+                            combining with the Back-End side entirely. Love to
+                            use React.js for developing the Front-End and
+                            recently interested in using Apollo Client with
+                            React.js.
                         </SkillDesc>
                         <Tools>Skills</Tools>
                         <LabelWrapper>
@@ -44,11 +47,13 @@ const About = () => {
                         <Icon className='fas fa-database'></Icon>
                         <SkillTitle>Back-End</SkillTitle>
                         <SkillDesc>
-                            Building effective server-side and structure for
-                            combining with Front-End side properly. Also
-                            maintaining data and API for Web application.
+                            To build an effective server-side and structure for
+                            combining with the Front-End side properly, also
+                            maintain data and API for a Web application with
+                            Node.js and MongoDB. Recently, interested in using
+                            GraphQL with Apollo, it makes handling data to be
+                            simple.
                         </SkillDesc>
-                        <br />
                         <Tools>Skills</Tools>
                         <LabelWrapper>
                             <Label color='olive'>Node.js</Label>
@@ -57,16 +62,19 @@ const About = () => {
                             <Label color='pink'>GraphQL</Label>
                             <Label color='green'>MongoDB</Label>
                             <Label color='purple'>Heroku</Label>
-                            <Label color='black'>Zeit</Label>
+                            <Label color='black'>Vercel</Label>
                         </LabelWrapper>
                     </Skill2>
                     <Skill3>
                         <Icon className='fab fa-connectdevelop'></Icon>
                         <SkillTitle>Web Design</SkillTitle>
                         <SkillDesc>
-                            Create the look, layout, and feature of Web sites
-                            and associated applications. Moreover trying to make
-                            a user friendly design.
+                            To create the look, layout, and feature of Web sites
+                            and associated applications. Moreover, trying to
+                            make a user-friendly design. Try to use D3.js as
+                            possible because it makes a project look more
+                            dynamic, not only adding graphs about numbers or
+                            figures.
                         </SkillDesc>
                         <Tools>Skills</Tools>
                         <LabelWrapper>
@@ -86,12 +94,28 @@ const About = () => {
 export default About;
 
 const BackGround = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     text-align: center;
     width: 100%;
     height: 500px;
     background: rgb(58, 174, 139);
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(70%, rgba(58, 174, 139, 1)),
+        to(rgba(253, 187, 45, 1))
+    );
+    background: -o-linear-gradient(
+        bottom,
+        rgba(58, 174, 139, 1) 70%,
+        rgba(253, 187, 45, 1) 100%
+    );
     background: linear-gradient(
         0deg,
         rgba(58, 174, 139, 1) 70%,
@@ -104,18 +128,25 @@ const Title = styled.p`
     font-weight: var(--fw-bold);
     color: var(--clr-light);
     padding-top: 100px;
+
     @media only screen and (max-width: 768px) {
         padding-top: 70px;
     }
 `;
 const Desc = styled.p`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
-
     font-family: var(--ff-forth);
     font-size: 1.2rem;
     font-weight: lighter;
@@ -123,34 +154,54 @@ const Desc = styled.p`
 `;
 
 const Skills = styled.div`
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     max-width: 1200px;
     height: auto;
     border: 1px solid lightgray;
     border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 3px lightgray;
     box-shadow: 0px 2px 3px lightgray;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     margin: -12rem auto 5em auto;
     background-color: var(--clr-light);
     text-align: center;
 
     @media only screen and (max-width: 768px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
         max-width: 600px;
         margin-bottom: 3em;
     }
 `;
 const LabelWrapper = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 `;
 const Skill1 = styled.div`
     padding: 2em;
+
     @media only screen and (max-width: 768px) {
         padding: 1em;
     }
@@ -171,6 +222,7 @@ const Skill2 = styled.div`
 `;
 const Skill3 = styled.div`
     padding: 2em;
+
     @media only screen and (max-width: 768px) {
         padding: 1em;
     }
@@ -179,6 +231,7 @@ const Icon = styled.i`
     font-size: 4em;
     color: var(--clr-accent);
     padding: 1.5rem;
+
     @media only screen and (max-width: 768px) {
         font-size: 2.5em;
         padding: 0.5rem;
@@ -189,6 +242,7 @@ const SkillTitle = styled.p`
     font-size: var(--fs-body);
     font-weight: var(--fw-bold);
     padding: 1.5rem;
+
     @media only screen and (max-width: 768px) {
         padding: 0.5rem;
     }
@@ -203,6 +257,7 @@ const Tools = styled.p`
     color: var(--clr-accent);
     font-size: 1.2rem;
     padding: 1.5rem;
+
     @media only screen and (max-width: 768px) {
         padding: 0.5rem;
     }

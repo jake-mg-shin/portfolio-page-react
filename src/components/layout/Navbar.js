@@ -36,40 +36,62 @@ const Navbar = () => {
 export default Navbar;
 
 const NavBar = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    // text-align: center;
-    // position: relative;
     margin-top: 1em;
     width: 100%;
     height: auto;
     margin: 0 auto;
 
     @media only screen and (max-width: 480px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
-        // text-align: left;
     }
 `;
 const LogoWrapper = styled.a`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    // flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: left;
     width: 100%;
-    // float: left;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em 0;
 `;
 const LogoImg = styled.img`
     max-width: 35px;
     margin-right: 10px;
+    -webkit-transition: -webkit-transform 0.4s linear;
+    transition: -webkit-transform 0.4s linear;
+    -o-transition: transform 0.4s linear;
     transition: transform 0.4s linear;
+    transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
 
     :hover {
+        -webkit-transition: -webkit-transform 0.4s linear;
+        transition: -webkit-transform 0.4s linear;
+        -o-transition: transform 0.4s linear;
         transition: transform 0.4s linear;
+        transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
         transform: rotate(90deg);
     }
 
@@ -83,22 +105,17 @@ const LogoName = styled.p`
     color: var(--clr-dark);
 `;
 const Nav = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     list-style: none;
     height: 100%;
-    // flex-direction: row;
-    // justify-content: space-evenly;
-    align-items: center;
-    // float: right;
-
     font-family: var(--ff-secondary);
     font-size: var(--fs-h3);
     font-weight: var(--fw-light);
-
-    // @media only screen and (max-width: 414px) {
-    //     flex-direction: column;
-
-    // }
 `;
 const NavItem = styled.div`
     color: black;
@@ -106,6 +123,8 @@ const NavItem = styled.div`
     border: 1px solid var(--clr-light);
     border-radius: 5px;
     border-color: var(--clr-light);
+    -webkit-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
     transition: border 0.2s ease-in-out;
 
     :hover {
@@ -113,6 +132,8 @@ const NavItem = styled.div`
         color: black;
         background-color: #fdcb6e;
         border-color: var(--clr-warning);
+        -webkit-transition: border 0.5s ease-in-out;
+        -o-transition: border 0.5s ease-in-out;
         transition: border 0.5s ease-in-out;
     }
 `;

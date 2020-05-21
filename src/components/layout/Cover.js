@@ -20,9 +20,18 @@ const Cover = () => {
 export default Cover;
 
 const CoverWrapper = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -45,9 +54,6 @@ const TitleText = styled.p`
     @media only screen and (max-width: 1024px) {
         padding-top: 50px;
     }
-    // @media only screen and (max-width: 768px) {
-    //     padding-top: 0px;
-    // }
 `;
 const SubText = styled.p`
     font-family: var(--ff-primary);
@@ -55,6 +61,7 @@ const SubText = styled.p`
     font-weight: lighter;
     color: var(--clr-dark);
     opacity: 0;
+    -webkit-animation: 2s fadein 2s forwards;
     animation: 2s fadein 2s forwards;
 
     @keyframes fadein {

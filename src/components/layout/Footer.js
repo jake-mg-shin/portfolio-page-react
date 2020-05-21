@@ -35,9 +35,18 @@ const Footer = () => {
 export default Footer;
 
 const Wrapper = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -45,6 +54,8 @@ const Wrapper = styled.div`
     background-color: var(--clr-accent);
 `;
 const IconWrap = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
     padding: 1rem;
@@ -56,6 +67,8 @@ const IconWrap = styled.div`
     }
 `;
 const Icon = styled.i`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 1.5em;
     color: white;
@@ -64,11 +77,15 @@ const Icon = styled.i`
     padding: 1rem;
     margin: 0 1rem;
     background-color: var(--clr-accent);
+    -webkit-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
     transition: background 0.3s linear;
 
     :hover {
         color: var(--clr-accent);
         background-color: white;
+        -webkit-transition: background 0.5s linear;
+        -o-transition: background 0.5s linear;
         transition: background 0.5s linear;
     }
     @media only screen and (max-width: 768px) {
@@ -76,6 +93,8 @@ const Icon = styled.i`
     }
 `;
 const Text = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 14px;
     color: white;

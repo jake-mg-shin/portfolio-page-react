@@ -24,17 +24,13 @@ const Contact = () => {
                         </Button>
                         <Header>
                             <Text>
-                                <span role='img' aria-label='arrow-right'>
-                                    ⬅️
-                                </span>
+                                <i class='far fa-arrow-alt-circle-left'></i>
                                 &nbsp; Interested in collaborating or hiring me?
-                                <span role='img' aria-label='arrow-right'>
+                                <span role='img' aria-label='smile'>
                                     😄
                                 </span>
                                 &nbsp;&nbsp;&nbsp;
-                                <span role='img' aria-label='arrow-right'>
-                                    ➡️
-                                </span>
+                                <i class='far fa-arrow-alt-circle-right'></i>
                             </Text>
                         </Header>
                         <Button href={Pdf} target='_blank'>
@@ -50,29 +46,36 @@ const Contact = () => {
 export default Contact;
 
 const Wrapper = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     width: 100%;
     height: 250px;
 `;
 const Title = styled.p`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     padding-top: 2em;
     margin-bottom: 5px !important;
-
     font-family: var(--ff-third);
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
     color: black;
 `;
 const SubTitle = styled.p`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-
     font-family: var(--ff-forth);
     font-size: var(--fs-body);
     font-weight: lighter;
@@ -80,7 +83,11 @@ const SubTitle = styled.p`
 `;
 
 const Wrapper2 = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -91,11 +98,17 @@ const Wrapper2 = styled.div`
 `;
 const ContactMe = styled.div`
     margin-top: -4rem;
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    // flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
     max-width: 1200px;
@@ -107,12 +120,22 @@ const ContactMe = styled.div`
     background-color: var(--clr-dark);
 
     @media only screen and (max-width: 768px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
         margin-top: -6rem;
     }
     @media only screen and (max-width: 414px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
         flex-grow: 1;
         margin-top: -9rem;
     }
@@ -138,12 +161,16 @@ const Button = styled.a`
     font-size: var(--fs-body);
     font-weight: lighter;
     color: white;
+    -webkit-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
     transition: background 0.3s linear;
 
     :hover {
         color: white;
         background-color: var(--clr-accent);
         cursor: pointer;
+        -webkit-transition: background 0.5s linear;
+        -o-transition: background 0.5s linear;
         transition: background 0.5s linear;
     }
 `;

@@ -13,8 +13,8 @@ const Carousel1 = () => {
                     className='legend'
                     style={{ opacity: '0.7', fontSize: '16px' }}
                 >
-                    Dynamic Design by D3.js, and fits to any size of screen or
-                    platform
+                    Dynamic Design by D3.js, and fits to any size of the screen
+                    or platform
                 </p>
             </div>
         </Carousel>

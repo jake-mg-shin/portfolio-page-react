@@ -26,13 +26,8 @@ const Projects = () => {
                                 <CardTitle>To-Do List</CardTitle>
                                 <CardDesc>
                                     <div>
-                                        <span
-                                            role='img'
-                                            aria-label='arrow-right'
-                                        >
-                                            ▶️
-                                        </span>
-                                        Managing daily routine
+                                        <i class='fas fa-arrow-circle-right'></i>
+                                        &nbsp;Manage daily routine
                                     </div>
                                     <div>
                                         <i className='fab fa-js-square'></i>
@@ -51,24 +46,15 @@ const Projects = () => {
                                                     style={{ fontSize: '16px' }}
                                                 >
                                                     <div>
-                                                        <span
-                                                            role='img'
-                                                            aria-label='arrow-right'
-                                                        >
-                                                            ☑️
-                                                        </span>
-                                                        Built by Vanilla
+                                                        <i class='fas fa-check-square'></i>
+                                                        &nbsp;Built by Vanilla
                                                         JavaScript with
                                                         LocalStorage and Open
                                                         Weather App API.
                                                     </div>
                                                     <div>
-                                                        <span
-                                                            role='img'
-                                                            aria-label='arrow-right'
-                                                        >
-                                                            🖥
-                                                        </span>
+                                                        <i class='fas fa-desktop'></i>
+                                                        &nbsp;
                                                         <a
                                                             href='https://jake-mg-shin.github.io/to-do-list-v1/'
                                                             target='_blank'
@@ -114,13 +100,8 @@ const Projects = () => {
                                 <CardTitle>Show Me Your Cat</CardTitle>
                                 <CardDesc>
                                     <div>
-                                        <span
-                                            role='img'
-                                            aria-label='arrow-right'
-                                        >
-                                            ▶️
-                                        </span>
-                                        Social Network Web for Cat Lovers
+                                        <i class='fas fa-arrow-circle-right'></i>
+                                        &nbsp;Social Network Web for Cat Lovers
                                     </div>
                                     <div>
                                         <i
@@ -144,24 +125,16 @@ const Projects = () => {
                                                     style={{ fontSize: '16px' }}
                                                 >
                                                     <div>
-                                                        <span
-                                                            role='img'
-                                                            aria-label='arrow-right'
-                                                        >
-                                                            ☑️
-                                                        </span>
-                                                        Built with Node.js and
-                                                        Express.js. Used CRUD
-                                                        method and maintains
-                                                        Database with MongoDB.
+                                                        <i class='fas fa-check-square'></i>
+                                                        &nbsp; Built with
+                                                        Node.js and Express.js.
+                                                        Used CRUD method and
+                                                        maintains Database with
+                                                        MongoDB.
                                                     </div>
                                                     <div>
-                                                        <span
-                                                            role='img'
-                                                            aria-label='arrow-right'
-                                                        >
-                                                            🖥
-                                                        </span>
+                                                        <i class='fas fa-desktop'></i>
+                                                        &nbsp;
                                                         <a
                                                             href='https://show-me-your-cat-v1.herokuapp.com/'
                                                             target='_blank'
@@ -221,14 +194,9 @@ const Projects = () => {
                                 <CardTitle>My Community Listing</CardTitle>
                                 <CardDesc>
                                     <div>
-                                        <span
-                                            role='img'
-                                            aria-label='arrow-right'
-                                        >
-                                            ▶️
-                                        </span>
-                                        A Template for Entrepreneur or Companies
-                                        in Realty Market
+                                        <i class='fas fa-arrow-circle-right'></i>
+                                        &nbsp;A Template for Entrepreneur or
+                                        Companies in Realty Market
                                     </div>
                                     <div>
                                         <i
@@ -252,24 +220,15 @@ const Projects = () => {
                                                     style={{ fontSize: '16px' }}
                                                 >
                                                     <div>
-                                                        <span
-                                                            role='img'
-                                                            aria-label='arrow-right'
-                                                        >
-                                                            ☑️
-                                                        </span>
-                                                        Built with React.js and
-                                                        used D3.js and Mapbox GL
-                                                        made this Web Template
+                                                        <i class='fas fa-check-square'></i>
+                                                        &nbsp; Built with
+                                                        React.js and used D3.js
+                                                        and Mapbox GL made it
                                                         looks more interactive.
                                                     </div>
                                                     <div>
-                                                        <span
-                                                            role='img'
-                                                            aria-label='arrow-right'
-                                                        >
-                                                            🖥
-                                                        </span>
+                                                        <i class='fas fa-desktop'></i>
+                                                        &nbsp;
                                                         <a
                                                             href='https://jake-mg-shin.github.io/my-community-listing-v2/'
                                                             target='_blank'
@@ -326,13 +285,8 @@ const Projects = () => {
                                 <CardTitle>Portfolio Page</CardTitle>
                                 <CardDesc>
                                     <div>
-                                        <span
-                                            role='img'
-                                            aria-label='arrow-right'
-                                        >
-                                            ▶️
-                                        </span>
-                                        Portfolio Page
+                                        <i class='fas fa-arrow-circle-right'></i>
+                                        &nbsp;Portfolio Page
                                     </div>
                                     <div>
                                         <i
@@ -356,17 +310,12 @@ const Projects = () => {
                                                     style={{ fontSize: '16px' }}
                                                 >
                                                     <div>
-                                                        <span
-                                                            role='img'
-                                                            aria-label='arrow-right'
-                                                        >
-                                                            ☑️
-                                                        </span>
-                                                        Built with React.js.
-                                                        Expressed dynamic design
-                                                        by using D3.js and
-                                                        responsive web by
-                                                        flex-box and grid.
+                                                        <i class='fas fa-check-square'></i>
+                                                        &nbsp; Built with
+                                                        React.js. Expressed
+                                                        dynamic design by using
+                                                        D3.js and responsive-web
+                                                        by flex-box and grid.
                                                     </div>
                                                 </div>
                                                 <br />
@@ -392,6 +341,9 @@ const Projects = () => {
                                                     <Label color='yellow'>
                                                         styled-components
                                                     </Label>
+                                                    <Label color='black'>
+                                                        Vercel
+                                                    </Label>
                                                 </LabelWrapper>
                                             </Modal.Description>
                                         </Modal.Content>
@@ -410,7 +362,12 @@ const Projects = () => {
 export default Projects;
 
 const Wrapper = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     margin: 5em auto;
@@ -436,7 +393,10 @@ const SubTitle = styled.p`
 const Cards = styled.div`
     margin-top: 5em;
 
+    display: -ms-grid;
+
     display: grid;
+    -ms-grid-columns: 1fr 1.5rem 1fr 1.5rem 1fr;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;
     grid-auto-flow: row dense;
@@ -445,11 +405,13 @@ const Cards = styled.div`
     margin-right: auto;
 
     @media only screen and (max-width: 1024px) {
+        -ms-grid-columns: (1fr) [2];
         grid-template-columns: repeat(2, 1fr);
         max-width: 1000px;
         margin-top: 3em;
     }
     @media only screen and (max-width: 768px) {
+        -ms-grid-columns: (1fr) [1];
         grid-template-columns: repeat(1, 1fr);
         max-width: 600px;
         margin-top: 1em;
@@ -458,8 +420,10 @@ const Cards = styled.div`
 const Card = styled.div`
     display: block;
     position: relative;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid lightgray;
+    -webkit-box-shadow: 0px 2px 3px lightgray;
     box-shadow: 0px 2px 3px lightgray;
     border-radius: 5px;
     width: 100%;
@@ -482,11 +446,12 @@ const Overlay = styled.div`
     height: auto;
     border-radius: 5px;
     opacity: 0;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
     transition: 0.5s ease;
 
     :hover {
         opacity: 0.9;
-        // cursor: pointer;
         background-color: var(--clr-dark);
     }
 `;
@@ -531,11 +496,15 @@ const Button = styled.a`
     cursor: pointer;
     border-radius: 5px;
     opacity: 0.5;
+    -webkit-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
 
     :hover {
         color: var(--clr-dark);
         opacity: 1;
+        -webkit-transition: opacity 0.5s linear;
+        -o-transition: opacity 0.5s linear;
         transition: opacity 0.5s linear;
     }
-    transition: opacity 0.3s linear;
 `;

@@ -95,15 +95,24 @@ const Graph = () => {
 export default Graph;
 
 const Section = styled.div`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     max-width: 700px;
     margin: 2rem auto 120px auto;
-    
-    @media only screen and (max-width: 768px){
-        margin 2rem auto 1rem auto;
+
+    @media only screen and (max-width: 768px) {
+        margin: 2rem auto 1rem auto;
     }
 `;
 const Wrap = styled.svg`

@@ -15,7 +15,8 @@ const Carousel1 = () => {
                     className='legend'
                     style={{ opacity: '0.7', fontSize: '16px' }}
                 >
-                    Shows current time and rotates to change back ground
+                    Shows current time and rotates to change the background
+                    image
                 </p>
             </div>
             <div>
@@ -24,7 +25,7 @@ const Carousel1 = () => {
                     className='legend'
                     style={{ opacity: '0.7', fontSize: '16px' }}
                 >
-                    Provides greeting to User after user's name is input,
+                    Provides greeting to User after User's name is input,
                     creates and removes To-Do
                 </p>
             </div>
@@ -34,7 +35,7 @@ const Carousel1 = () => {
                     className='legend'
                     style={{ opacity: '0.7', fontSize: '16px' }}
                 >
-                    Provides current Temperature and Location by using geo data
+                    Provides current Temperature and Location by using geodata
                     and API
                 </p>
             </div>

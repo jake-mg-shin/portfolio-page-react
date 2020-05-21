@@ -20,8 +20,8 @@ const Carousel1 = () => {
                     className='legend'
                     style={{ opacity: '0.7', fontSize: '16px' }}
                 >
-                    Provides a functions to create Posting and comments which
-                    are maintained by MongoDB Atlas
+                    Provides functions to create Posting and comments which are
+                    maintained by MongoDB Atlas
                 </p>
             </div>
             <div>
@@ -39,7 +39,7 @@ const Carousel1 = () => {
                     className='legend'
                     style={{ opacity: '0.7', fontSize: '16px' }}
                 >
-                    Be able to create Posting after Log in only
+                    Can create Posting after login only
                 </p>
             </div>
             <div>
@@ -48,8 +48,8 @@ const Carousel1 = () => {
                     className='legend'
                     style={{ opacity: '0.7', fontSize: '16px' }}
                 >
-                    Not only creates Posting, but also edits or deletes own
-                    posts include comments
+                    Not only creates Posting but also edits or deletes own posts
+                    include comments
                 </p>
             </div>
         </Carousel>

@@ -18,7 +18,7 @@ const Carousel1 = () => {
                     className='legend'
                     style={{ opacity: '0.7', fontSize: '16px' }}
                 >
-                    A Template for Realty industry in a community
+                    A Template for the Realty industry in a community
                 </p>
             </div>
             <div>
@@ -63,7 +63,7 @@ const Carousel1 = () => {
                     className='legend'
                     style={{ opacity: '0.7', fontSize: '16px' }}
                 >
-                    Be able to hook any open or public news in the web
+                    Can hook any open or public news in the web
                 </p>
             </div>
         </Carousel>
