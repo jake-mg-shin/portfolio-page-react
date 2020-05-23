@@ -11,7 +11,7 @@ const Carousel1 = () => {
                 <img src={img1} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Dynamic Design by D3.js, and fits to any size of the screen
                     or platform

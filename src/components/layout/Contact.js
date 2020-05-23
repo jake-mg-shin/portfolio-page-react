@@ -24,13 +24,13 @@ const Contact = () => {
                         </Button>
                         <Header>
                             <Text>
-                                <i class='far fa-arrow-alt-circle-left'></i>
+                                <i className='far fa-arrow-alt-circle-left'></i>
                                 &nbsp; Interested in collaborating or hiring me?
                                 <span role='img' aria-label='smile'>
                                     😄
                                 </span>
                                 &nbsp;&nbsp;&nbsp;
-                                <i class='far fa-arrow-alt-circle-right'></i>
+                                <i className='far fa-arrow-alt-circle-right'></i>
                             </Text>
                         </Header>
                         <Button href={Pdf} target='_blank'>

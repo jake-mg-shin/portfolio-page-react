@@ -13,7 +13,7 @@ const Carousel1 = () => {
                 <img src={img1} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Shows current time and rotates to change the background
                     image
@@ -23,7 +23,7 @@ const Carousel1 = () => {
                 <img src={img2} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Provides greeting to User after User's name is input,
                     creates and removes To-Do
@@ -33,7 +33,7 @@ const Carousel1 = () => {
                 <img src={img3} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Provides current Temperature and Location by using geodata
                     and API

@@ -18,7 +18,7 @@ const Carousel1 = () => {
                 <img src={img2} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Provides functions to create Posting and comments which are
                     maintained by MongoDB Atlas
@@ -28,7 +28,7 @@ const Carousel1 = () => {
                 <img src={img3} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Provides Authentication for User
                 </p>
@@ -37,7 +37,7 @@ const Carousel1 = () => {
                 <img src={img4} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Can create Posting after login only
                 </p>
@@ -46,7 +46,7 @@ const Carousel1 = () => {
                 <img src={img5} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Not only creates Posting but also edits or deletes own posts
                     include comments

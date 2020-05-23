@@ -119,7 +119,7 @@ const Nav = styled.div`
 `;
 const NavItem = styled.div`
     color: black;
-    padding: 0.5rem;
+    padding: 0.8rem;
     border: 1px solid var(--clr-light);
     border-radius: 5px;
     border-color: var(--clr-light);

@@ -26,8 +26,8 @@ const Projects = () => {
                                 <CardTitle>To-Do List</CardTitle>
                                 <CardDesc>
                                     <div>
-                                        <i class='fas fa-arrow-circle-right'></i>
-                                        &nbsp;Manage daily routine
+                                        <i className='fas fa-arrow-circle-right'></i>
+                                        &nbsp;Managing daily To-Do
                                     </div>
                                     <div>
                                         <i className='fab fa-js-square'></i>
@@ -43,17 +43,17 @@ const Projects = () => {
                                         <Modal.Content>
                                             <Modal.Description>
                                                 <div
-                                                    style={{ fontSize: '16px' }}
+                                                    style={{ fontSize: '14px' }}
                                                 >
                                                     <div>
-                                                        <i class='fas fa-check-square'></i>
+                                                        <i className='fas fa-check-square'></i>
                                                         &nbsp;Built by Vanilla
                                                         JavaScript with
                                                         LocalStorage and Open
                                                         Weather App API.
                                                     </div>
                                                     <div>
-                                                        <i class='fas fa-desktop'></i>
+                                                        <i className='fas fa-desktop'></i>
                                                         &nbsp;
                                                         <a
                                                             href='https://jake-mg-shin.github.io/to-do-list-v1/'
@@ -64,6 +64,7 @@ const Projects = () => {
                                                         </a>
                                                     </div>
                                                 </div>
+                                                <br />
                                                 <LabelWrapper>
                                                     <Label color='red'>
                                                         HTML
@@ -100,7 +101,7 @@ const Projects = () => {
                                 <CardTitle>Show Me Your Cat</CardTitle>
                                 <CardDesc>
                                     <div>
-                                        <i class='fas fa-arrow-circle-right'></i>
+                                        <i className='fas fa-arrow-circle-right'></i>
                                         &nbsp;Social Network Web for Cat Lovers
                                     </div>
                                     <div>
@@ -122,10 +123,10 @@ const Projects = () => {
                                         <Modal.Content>
                                             <Modal.Description>
                                                 <div
-                                                    style={{ fontSize: '16px' }}
+                                                    style={{ fontSize: '14px' }}
                                                 >
                                                     <div>
-                                                        <i class='fas fa-check-square'></i>
+                                                        <i className='fas fa-check-square'></i>
                                                         &nbsp; Built with
                                                         Node.js and Express.js.
                                                         Used CRUD method and
@@ -133,7 +134,7 @@ const Projects = () => {
                                                         MongoDB.
                                                     </div>
                                                     <div>
-                                                        <i class='fas fa-desktop'></i>
+                                                        <i className='fas fa-desktop'></i>
                                                         &nbsp;
                                                         <a
                                                             href='https://show-me-your-cat-v1.herokuapp.com/'
@@ -144,6 +145,7 @@ const Projects = () => {
                                                         </a>
                                                     </div>
                                                 </div>
+                                                <br />
                                                 <LabelWrapper>
                                                     <Label color='red'>
                                                         HTML
@@ -194,7 +196,7 @@ const Projects = () => {
                                 <CardTitle>My Community Listing</CardTitle>
                                 <CardDesc>
                                     <div>
-                                        <i class='fas fa-arrow-circle-right'></i>
+                                        <i className='fas fa-arrow-circle-right'></i>
                                         &nbsp;A Template for Entrepreneur or
                                         Companies in Realty Market
                                     </div>
@@ -217,17 +219,17 @@ const Projects = () => {
                                         <Modal.Content>
                                             <Modal.Description>
                                                 <div
-                                                    style={{ fontSize: '16px' }}
+                                                    style={{ fontSize: '14px' }}
                                                 >
                                                     <div>
-                                                        <i class='fas fa-check-square'></i>
+                                                        <i className='fas fa-check-square'></i>
                                                         &nbsp; Built with
                                                         React.js and used D3.js
                                                         and Mapbox GL made it
                                                         looks more interactive.
                                                     </div>
                                                     <div>
-                                                        <i class='fas fa-desktop'></i>
+                                                        <i className='fas fa-desktop'></i>
                                                         &nbsp;
                                                         <a
                                                             href='https://jake-mg-shin.github.io/my-community-listing-v2/'
@@ -238,6 +240,7 @@ const Projects = () => {
                                                         </a>
                                                     </div>
                                                 </div>
+                                                <br />
                                                 <LabelWrapper>
                                                     <Label color='red'>
                                                         HTML
@@ -285,7 +288,7 @@ const Projects = () => {
                                 <CardTitle>Portfolio Page</CardTitle>
                                 <CardDesc>
                                     <div>
-                                        <i class='fas fa-arrow-circle-right'></i>
+                                        <i className='fas fa-arrow-circle-right'></i>
                                         &nbsp;Portfolio Page
                                     </div>
                                     <div>
@@ -307,10 +310,10 @@ const Projects = () => {
                                         <Modal.Content>
                                             <Modal.Description>
                                                 <div
-                                                    style={{ fontSize: '16px' }}
+                                                    style={{ fontSize: '14px' }}
                                                 >
                                                     <div>
-                                                        <i class='fas fa-check-square'></i>
+                                                        <i className='fas fa-check-square'></i>
                                                         &nbsp; Built with
                                                         React.js. Expressed
                                                         dynamic design by using
@@ -318,6 +321,7 @@ const Projects = () => {
                                                         by flex-box and grid.
                                                     </div>
                                                 </div>
+                                                <br />
                                                 <br />
                                                 <LabelWrapper>
                                                     <Label color='red'>

@@ -16,7 +16,7 @@ const Carousel1 = () => {
                 <img src={img1} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     A Template for the Realty industry in a community
                 </p>
@@ -25,7 +25,7 @@ const Carousel1 = () => {
                 <img src={img2} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Easily creates Cards of Listings and Specific Data
                 </p>
@@ -34,7 +34,7 @@ const Carousel1 = () => {
                 <img src={img3} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Shows locations of Listings dynamically by using Mapbox GL
                 </p>
@@ -43,7 +43,7 @@ const Carousel1 = () => {
                 <img src={img4} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Shows Details of Listings on Modal window
                 </p>
@@ -52,7 +52,7 @@ const Carousel1 = () => {
                 <img src={img5} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Shows figures or numbers as a graph by using D3.js
                 </p>
@@ -61,7 +61,7 @@ const Carousel1 = () => {
                 <img src={img6} alt='' />
                 <p
                     className='legend'
-                    style={{ opacity: '0.7', fontSize: '16px' }}
+                    style={{ opacity: '0.5', fontSize: '14px' }}
                 >
                     Can hook any open or public news in the web
                 </p>
