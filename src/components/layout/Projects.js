@@ -396,13 +396,11 @@ const SubTitle = styled.p`
 
 const Cards = styled.div`
     margin-top: 5em;
-
     display: -ms-grid;
-
     display: grid;
     -ms-grid-columns: 1fr 1.5rem 1fr 1.5rem 1fr;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
+    grid-gap: 1rem;
     grid-auto-flow: row dense;
     max-width: 1400px;
     margin-left: auto;
