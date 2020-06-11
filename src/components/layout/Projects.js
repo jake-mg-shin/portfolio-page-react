@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import { Container } from 'semantic-ui-react';
-import { Modal, Label } from 'semantic-ui-react';
+import { Container, Modal, Label, Image, Icon } from 'semantic-ui-react';
 
 import p1 from '../images/project1_1.png';
 import p2 from '../images/project2_1.png';
 import p3 from '../images/project3_1.png';
 import p4 from '../images/project4_1.png';
+import p5 from '../images/project5_1.png';
+import p5_2 from '../images/project5_2.png';
 import Carousel1 from '../projects/Carousel1';
 import Carousel2 from '../projects/Carousel2';
 import Carousel3 from '../projects/Carousel3';
@@ -353,6 +354,130 @@ const Projects = () => {
                                         </Modal.Content>
                                         <Carousel4 />
                                     </Modal>
+                                </Fragment>
+                            </Content>
+                        </Overlay>
+                    </Card>
+
+                    <Card>
+                        <Img src={p5} />
+                        <Overlay>
+                            <Content>
+                                <CardTitle>Apollo Movie DB</CardTitle>
+                                <CardDesc>
+                                    <div>
+                                        <i className='fas fa-arrow-circle-right'></i>
+                                        &nbsp;Provides Details and News of
+                                        Movies and Trailer.
+                                    </div>
+                                    <div>
+                                        <i
+                                            className='fab fa-react'
+                                            style={{ fontWeight: 'bold' }}
+                                        ></i>
+                                        &nbsp; Built with React.js and GraphQL
+                                    </div>
+                                </CardDesc>
+                                <Fragment>
+                                    <Modal
+                                        trigger={<Button>Learn More</Button>}
+                                        closeIcon
+                                    >
+                                        <Modal.Header>
+                                            Apollo Movie DB
+                                        </Modal.Header>
+                                        <Modal.Content>
+                                            <Modal.Description>
+                                                <div
+                                                    style={{
+                                                        fontSize:
+                                                            'var(--fs-small)',
+                                                    }}
+                                                >
+                                                    <div>
+                                                        <Icon
+                                                            name='check square'
+                                                            size='large'
+                                                        />
+                                                        &nbsp; Client-Side is
+                                                        built with React.js and
+                                                        Apollo-Client.
+                                                    </div>
+                                                    <div>
+                                                        <Icon
+                                                            name='check square'
+                                                            size='large'
+                                                        />
+                                                        &nbsp; Server-Side is
+                                                        built with Apollo-Server
+                                                        and GraphQL.
+                                                    </div>
+                                                    <br />
+                                                    <div>
+                                                        <Icon
+                                                            name='laptop'
+                                                            size='large'
+                                                        />
+                                                        &nbsp;&nbsp;
+                                                        <a
+                                                            href='https://apollo-movie-db.netlify.app/#/'
+                                                            target='_blank'
+                                                            rel='noopener noreferrer'
+                                                        >
+                                                            See Project
+                                                        </a>
+                                                        &nbsp; |{' '}
+                                                        <Icon
+                                                            name='github'
+                                                            size='large'
+                                                        />{' '}
+                                                        <a
+                                                            href='https://github.com/jake-mg-shin/apollo-movie-db-app-react'
+                                                            target='_blank'
+                                                            rel='noopener noreferrer'
+                                                        >
+                                                            See Repo
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <LabelWrapper>
+                                                    <Label color='teal'>
+                                                        React.js
+                                                    </Label>
+                                                    <Label color='black'>
+                                                        Apollo
+                                                    </Label>
+                                                    <Label color='pink'>
+                                                        GraphQL
+                                                    </Label>
+                                                    <Label color='teal'>
+                                                        Semantic UI
+                                                    </Label>
+                                                    <Label color='yellow'>
+                                                        styled-components
+                                                    </Label>
+                                                    <Label color='brown'>
+                                                        Github
+                                                    </Label>
+                                                    <Label color='teal'>
+                                                        Netlify
+                                                    </Label>
+                                                    <Label color='black'>
+                                                        Vercel
+                                                    </Label>
+                                                </LabelWrapper>
+                                            </Modal.Description>
+                                        </Modal.Content>
+                                        <Image src={p5_2} fluid />
+                                        {/* <Carousel3 /> */}
+                                    </Modal>
+                                    <Button
+                                        href='https://apollo-movie-db.netlify.app/#/'
+                                        target='_blank'
+                                    >
+                                        See Project
+                                    </Button>
                                 </Fragment>
                             </Content>
                         </Overlay>

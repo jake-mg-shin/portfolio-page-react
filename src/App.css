@@ -24,15 +24,17 @@
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+    --fs-small: 0.8rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
         0.125em 0.125em 0.25em rgba(3, 3, 3, 0.15);
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 2rem;
-        --fs-body: 1.5rem;
+        --fs-body: 1.3rem;
+        --fs-small: 1rem;
     }
 }

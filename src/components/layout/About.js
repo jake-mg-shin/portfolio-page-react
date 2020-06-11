@@ -41,6 +41,7 @@ const About = () => {
                             <Label color='teal'>React.js</Label>
                             <Label color='black'>Apollo</Label>
                             <Label color='brown'>Github</Label>
+                            <Label color='teal'>Netlify</Label>
                         </LabelWrapper>
                     </Skill1>
                     <Skill2>
@@ -59,6 +60,7 @@ const About = () => {
                             <Label color='olive'>Node.js</Label>
                             <Label color='grey'>Express.js</Label>
                             <Label color='brown'>Passport.js</Label>
+                            <Label color='black'>Apollo</Label>
                             <Label color='pink'>GraphQL</Label>
                             <Label color='green'>MongoDB</Label>
                             <Label color='purple'>Heroku</Label>
