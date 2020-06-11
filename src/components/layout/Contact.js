@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Container, Divider } from 'semantic-ui-react';
 import styled from 'styled-components';
 
-import Pdf from '../documents/JakeShin_Resume.pdf';
+import Pdf from '../documents/JakeShin_Resume_Portfolio.pdf';
 
 const Contact = () => {
     return (

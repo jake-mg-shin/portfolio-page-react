@@ -366,15 +366,12 @@ const Projects = () => {
                                 <CardTitle>Apollo Movie DB</CardTitle>
                                 <CardDesc>
                                     <div>
-                                        <i className='fas fa-arrow-circle-right'></i>
+                                        <Icon name='arrow circle right' />
                                         &nbsp;Provides Details and News of
-                                        Movies and Trailer.
+                                        Movies, and Trailers.
                                     </div>
                                     <div>
-                                        <i
-                                            className='fab fa-react'
-                                            style={{ fontWeight: 'bold' }}
-                                        ></i>
+                                        <Icon name='react' />
                                         &nbsp; Built with React.js and GraphQL
                                     </div>
                                 </CardDesc>
@@ -395,29 +392,20 @@ const Projects = () => {
                                                     }}
                                                 >
                                                     <div>
-                                                        <Icon
-                                                            name='check square'
-                                                            size='large'
-                                                        />
+                                                        <Icon name='check square' />
                                                         &nbsp; Client-Side is
                                                         built with React.js and
                                                         Apollo-Client.
                                                     </div>
                                                     <div>
-                                                        <Icon
-                                                            name='check square'
-                                                            size='large'
-                                                        />
+                                                        <Icon name='check square' />
                                                         &nbsp; Server-Side is
                                                         built with Apollo-Server
                                                         and GraphQL.
                                                     </div>
                                                     <br />
                                                     <div>
-                                                        <Icon
-                                                            name='laptop'
-                                                            size='large'
-                                                        />
+                                                        <Icon name='laptop' />
                                                         &nbsp;&nbsp;
                                                         <a
                                                             href='https://apollo-movie-db.netlify.app/#/'
@@ -427,10 +415,7 @@ const Projects = () => {
                                                             See Project
                                                         </a>
                                                         &nbsp; |{' '}
-                                                        <Icon
-                                                            name='github'
-                                                            size='large'
-                                                        />{' '}
+                                                        <Icon name='github' />{' '}
                                                         <a
                                                             href='https://github.com/jake-mg-shin/apollo-movie-db-app-react'
                                                             target='_blank'
