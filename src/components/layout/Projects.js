@@ -8,10 +8,12 @@ import p3 from '../images/project3_1.png';
 import p4 from '../images/project4_1.png';
 import p5 from '../images/project5_1.png';
 import p5_2 from '../images/project5_2.png';
-import Carousel1 from '../projects/Carousel1';
-import Carousel2 from '../projects/Carousel2';
-import Carousel3 from '../projects/Carousel3';
-import Carousel4 from '../projects/Carousel4';
+import Carousel1 from '../project/Carousel1';
+import Carousel2 from '../project/Carousel2';
+import Carousel3 from '../project/Carousel3';
+import Carousel4 from '../project/Carousel4';
+
+import Project5 from '../projects/Project5';
 
 const Projects = () => {
     return (
@@ -359,114 +361,7 @@ const Projects = () => {
                         </Overlay>
                     </Card>
 
-                    <Card>
-                        <Img src={p5} />
-                        <Overlay>
-                            <Content>
-                                <CardTitle>Apollo Movie DB</CardTitle>
-                                <CardDesc>
-                                    <div>
-                                        <Icon name='arrow circle right' />
-                                        &nbsp;Provides Details and News of
-                                        Movies, and Trailers.
-                                    </div>
-                                    <div>
-                                        <Icon name='react' />
-                                        &nbsp; Built with React.js and GraphQL
-                                    </div>
-                                </CardDesc>
-                                <Fragment>
-                                    <Modal
-                                        trigger={<Button>Learn More</Button>}
-                                        closeIcon
-                                    >
-                                        <Modal.Header>
-                                            Apollo Movie DB
-                                        </Modal.Header>
-                                        <Modal.Content>
-                                            <Modal.Description>
-                                                <div
-                                                    style={{
-                                                        fontSize:
-                                                            'var(--fs-small)',
-                                                    }}
-                                                >
-                                                    <div>
-                                                        <Icon name='check square' />
-                                                        &nbsp; Client-Side is
-                                                        built with React.js and
-                                                        Apollo-Client.
-                                                    </div>
-                                                    <div>
-                                                        <Icon name='check square' />
-                                                        &nbsp; Server-Side is
-                                                        built with Apollo-Server
-                                                        and GraphQL.
-                                                    </div>
-                                                    <br />
-                                                    <div>
-                                                        <Icon name='laptop' />
-                                                        &nbsp;&nbsp;
-                                                        <a
-                                                            href='https://apollo-movie-db.netlify.app/#/'
-                                                            target='_blank'
-                                                            rel='noopener noreferrer'
-                                                        >
-                                                            See Project
-                                                        </a>
-                                                        &nbsp; |{' '}
-                                                        <Icon name='github' />{' '}
-                                                        <a
-                                                            href='https://github.com/jake-mg-shin/apollo-movie-db-app-react'
-                                                            target='_blank'
-                                                            rel='noopener noreferrer'
-                                                        >
-                                                            See Repo
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <br />
-                                                <LabelWrapper>
-                                                    <Label color='teal'>
-                                                        React.js
-                                                    </Label>
-                                                    <Label color='black'>
-                                                        Apollo
-                                                    </Label>
-                                                    <Label color='pink'>
-                                                        GraphQL
-                                                    </Label>
-                                                    <Label color='teal'>
-                                                        Semantic UI
-                                                    </Label>
-                                                    <Label color='yellow'>
-                                                        styled-components
-                                                    </Label>
-                                                    <Label color='brown'>
-                                                        Github
-                                                    </Label>
-                                                    <Label color='teal'>
-                                                        Netlify
-                                                    </Label>
-                                                    <Label color='black'>
-                                                        Vercel
-                                                    </Label>
-                                                </LabelWrapper>
-                                            </Modal.Description>
-                                        </Modal.Content>
-                                        <Image src={p5_2} fluid />
-                                        {/* <Carousel3 /> */}
-                                    </Modal>
-                                    <Button
-                                        href='https://apollo-movie-db.netlify.app/#/'
-                                        target='_blank'
-                                    >
-                                        See Project
-                                    </Button>
-                                </Fragment>
-                            </Content>
-                        </Overlay>
-                    </Card>
+                    <Project5 />
                 </Cards>
             </Container>
         </Wrapper>
