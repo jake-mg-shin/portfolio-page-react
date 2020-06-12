@@ -5,14 +5,13 @@ import { Container, Modal, Label, Image, Icon } from 'semantic-ui-react';
 import p1 from '../images/project1_1.png';
 import p2 from '../images/project2_1.png';
 import p3 from '../images/project3_1.png';
-import p4 from '../images/project4_1.png';
-import p5 from '../images/project5_1.png';
-import p5_2 from '../images/project5_2.png';
+
 import Carousel1 from '../project/Carousel1';
 import Carousel2 from '../project/Carousel2';
 import Carousel3 from '../project/Carousel3';
 import Carousel4 from '../project/Carousel4';
 
+import Project4 from '../projects/Project4';
 import Project5 from '../projects/Project5';
 
 const Projects = () => {
@@ -284,83 +283,8 @@ const Projects = () => {
                             </Content>
                         </Overlay>
                     </Card>
-                    <Card>
-                        <Img src={p4} />
-                        <Overlay>
-                            <Content>
-                                <CardTitle>Portfolio Page</CardTitle>
-                                <CardDesc>
-                                    <div>
-                                        <i className='fas fa-arrow-circle-right'></i>
-                                        &nbsp;Portfolio Page
-                                    </div>
-                                    <div>
-                                        <i
-                                            className='fab fa-react'
-                                            style={{ fontWeight: 'bold' }}
-                                        ></i>
-                                        &nbsp; Built with React.js
-                                    </div>
-                                </CardDesc>
-                                <Fragment>
-                                    <Modal
-                                        trigger={<Button>Learn More</Button>}
-                                        closeIcon
-                                    >
-                                        <Modal.Header>
-                                            Portfolio Page
-                                        </Modal.Header>
-                                        <Modal.Content>
-                                            <Modal.Description>
-                                                <div
-                                                    style={{ fontSize: '14px' }}
-                                                >
-                                                    <div>
-                                                        <i className='fas fa-check-square'></i>
-                                                        &nbsp; Built with
-                                                        React.js. Expressed
-                                                        dynamic design by using
-                                                        D3.js and responsive-web
-                                                        by flex-box and grid.
-                                                    </div>
-                                                </div>
-                                                <br />
-                                                <br />
-                                                <LabelWrapper>
-                                                    <Label color='red'>
-                                                        HTML
-                                                    </Label>
-                                                    <Label color='blue'>
-                                                        CSS
-                                                    </Label>
-                                                    <Label color='yellow'>
-                                                        JavaScript
-                                                    </Label>
-                                                    <Label color='teal'>
-                                                        React.js
-                                                    </Label>
-                                                    <Label color='orange'>
-                                                        D3.js
-                                                    </Label>
-                                                    <Label color='teal'>
-                                                        Semantic UI
-                                                    </Label>
-                                                    <Label color='yellow'>
-                                                        styled-components
-                                                    </Label>
-                                                    <Label color='black'>
-                                                        Vercel
-                                                    </Label>
-                                                </LabelWrapper>
-                                            </Modal.Description>
-                                        </Modal.Content>
-                                        <Carousel4 />
-                                    </Modal>
-                                </Fragment>
-                            </Content>
-                        </Overlay>
-                    </Card>
 
+                    <Project4 />
                     <Project5 />
                 </Cards>
             </Container>

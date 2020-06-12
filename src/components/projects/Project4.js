@@ -2,30 +2,29 @@ import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { Modal, Label, Image, Icon } from 'semantic-ui-react';
 
-import p5_1 from '../images/project5_1.png';
-import p5_2 from '../images/project5_2.png';
+import p4_1 from '../images/project4_1.png';
+import p4_2 from '../images/project4_1.png';
 
-const Project5 = () => {
+const Project4 = () => {
     return (
         <Card>
-            <Img src={p5_1} />
+            <Img src={p4_1} />
             <Overlay>
                 <Content>
-                    <CardTitle>Apollo Movie DB</CardTitle>
+                    <CardTitle>Portfolio Page</CardTitle>
                     <CardDesc>
                         <div>
                             <Icon name='arrow circle right' />
-                            &nbsp;Provides Details and News of Movies, and
-                            Trailers.
+                            &nbsp;Portfolio Page
                         </div>
                         <div>
                             <Icon name='react' />
-                            &nbsp; Built with React.js and GraphQL
+                            &nbsp; Built with React.js
                         </div>
                     </CardDesc>
                     <Fragment>
                         <Modal trigger={<Button>Learn More</Button>} closeIcon>
-                            <Modal.Header>Apollo Movie DB</Modal.Header>
+                            <Modal.Header>Portfolio Page</Modal.Header>
                             <Modal.Content>
                                 <Modal.Description>
                                     <div
@@ -35,58 +34,36 @@ const Project5 = () => {
                                     >
                                         <div>
                                             <Icon name='check square' />
-                                            &nbsp; Client-Side is built with
-                                            React.js and Apollo-Client.
-                                        </div>
-                                        <div>
-                                            <Icon name='check square' />
-                                            &nbsp; Server-Side is built with
-                                            Apollo-Server and GraphQL.
+                                            &nbsp; Built with React.js.
+                                            Expressed dynamic design by using
+                                            D3.js and responsive-web by flex-box
+                                            and grid.
                                         </div>
                                         <br />
-                                        <div>
-                                            <Icon name='laptop' />
-                                            &nbsp;&nbsp;
-                                            <a
-                                                href='https://apollo-movie-db.netlify.app/#/'
-                                                target='_blank'
-                                                rel='noopener noreferrer'
-                                            >
-                                                See Project
-                                            </a>
-                                            &nbsp; | <Icon name='github' />{' '}
-                                            <a
-                                                href='https://github.com/jake-mg-shin/apollo-movie-db-app-react'
-                                                target='_blank'
-                                                rel='noopener noreferrer'
-                                            >
-                                                See Repo
-                                            </a>
-                                        </div>
+                                        <Icon name='github' />{' '}
+                                        <a
+                                            href='https://github.com/jake-mg-shin/portfolio-page-react'
+                                            target='_blank'
+                                            rel='noopener noreferrer'
+                                        >
+                                            See Repo
+                                        </a>
                                     </div>
+                                    <br />
                                     <br />
                                     <LabelWrapper>
                                         <Label color='teal'>React.js</Label>
-                                        <Label color='black'>Apollo</Label>
-                                        <Label color='pink'>GraphQL</Label>
+                                        <Label color='orange'>D3.js</Label>
                                         <Label color='teal'>Semantic UI</Label>
                                         <Label color='yellow'>
                                             styled-components
                                         </Label>
-                                        <Label color='brown'>Github</Label>
-                                        <Label color='teal'>Netlify</Label>
                                         <Label color='black'>Vercel</Label>
                                     </LabelWrapper>
                                 </Modal.Description>
                             </Modal.Content>
-                            <Image src={p5_2} fluid />
+                            <Image src={p4_2} fluid />
                         </Modal>
-                        <Button
-                            href='https://apollo-movie-db.netlify.app/#/'
-                            target='_blank'
-                        >
-                            See Project
-                        </Button>
                     </Fragment>
                 </Content>
             </Overlay>
@@ -94,7 +71,7 @@ const Project5 = () => {
     );
 };
 
-export default Project5;
+export default Project4;
 
 // Style
 const Wrap = styled.div`
