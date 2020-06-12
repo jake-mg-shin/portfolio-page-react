@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Modal, Label, Image, Icon } from 'semantic-ui-react';
 
 import p4_1 from '../images/project4_1.png';
-import p4_2 from '../images/project4_1.png';
+import p4_2 from '../images/project4_2.png';
 
 const Project4 = () => {
     return (
