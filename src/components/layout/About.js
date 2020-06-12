@@ -125,7 +125,7 @@ const BackGround = styled.div`
     );
 `;
 const Title = styled.p`
-    font-family: var(--ff-third);
+    font-family: var(--ff-secondary);
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
     color: var(--clr-light);
@@ -149,8 +149,8 @@ const Desc = styled.p`
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
-    font-family: var(--ff-forth);
-    font-size: 1.2rem;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
     font-weight: lighter;
     color: var(--clr-light);
 `;
@@ -240,7 +240,7 @@ const Icon = styled.i`
     }
 `;
 const SkillTitle = styled.p`
-    font-family: var(--ff-third);
+    font-family: var(--ff-secondary);
     font-size: var(--fs-body);
     font-weight: var(--fw-bold);
     padding: 1.5rem;
@@ -250,8 +250,8 @@ const SkillTitle = styled.p`
     }
 `;
 const SkillDesc = styled.p`
-    font-family: var(--ff-forth);
-    font-size: 1.15rem;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-small);
     font-weight: lighter;
     color: var(--clr-dark);
 `;

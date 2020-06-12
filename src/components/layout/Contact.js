@@ -65,7 +65,7 @@ const Title = styled.p`
     margin-right: auto;
     padding-top: 2em;
     margin-bottom: 5px !important;
-    font-family: var(--ff-third);
+    font-family: var(--ff-secondary);
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
     color: black;
@@ -76,7 +76,7 @@ const SubTitle = styled.p`
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    font-family: var(--ff-forth);
+    font-family: var(--ff-primary);
     font-size: var(--fs-body);
     font-weight: lighter;
     color: var(--clr-dark);
