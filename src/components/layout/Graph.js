@@ -112,7 +112,7 @@ const Section = styled.div`
     margin: 2rem auto 120px auto;
 
     @media only screen and (max-width: 768px) {
-        margin: 2rem auto 1rem auto;
+        margin: 0.5rem auto 1rem auto;
     }
 `;
 const Wrap = styled.svg`
@@ -120,4 +120,8 @@ const Wrap = styled.svg`
     overflow: visible !important;
     background: white;
     margin-bottom: 2rem;
+
+    @media only screen and (max-width: 768px) {
+        height: 90px;
+    }
 `;

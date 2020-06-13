@@ -27,10 +27,8 @@ const About = () => {
                         <SkillDesc>
                             To build interactive Web applications by using
                             implemented visual elements and always considering
-                            combining with the Back-End side entirely. Love to
-                            use React.js for developing the Front-End and
-                            recently interested in using Apollo Client with
-                            React.js.
+                            combining with the Server-Side entirely. Love to use
+                            React.js for developing the Client-Side.
                         </SkillDesc>
                         <Tools>Skills</Tools>
                         <LabelWrapper>
@@ -39,21 +37,17 @@ const About = () => {
                             <Label color='yellow'>JavaScript</Label>
                             <Label color='grey'>jQuery</Label>
                             <Label color='teal'>React.js</Label>
-                            <Label color='black'>Apollo</Label>
-                            <Label color='brown'>Github</Label>
-                            <Label color='teal'>Netlify</Label>
+                            <Label color='orange'>D3.js</Label>
                         </LabelWrapper>
                     </Skill1>
                     <Skill2>
                         <Icon className='fas fa-database'></Icon>
                         <SkillTitle>Back-End</SkillTitle>
                         <SkillDesc>
-                            To build an effective server-side and structure for
-                            combining with the Front-End side properly, also
-                            maintain data and API for a Web application with
-                            Node.js and MongoDB. Recently, interested in using
-                            GraphQL with Apollo, it makes handling data to be
-                            simple.
+                            To build an effective Server-Side and structure for
+                            combining with the Client-Side properly, also
+                            maintain data and API for an application with
+                            Node.js and Express.js or Apollo-Server and GraphQL.
                         </SkillDesc>
                         <Tools>Skills</Tools>
                         <LabelWrapper>
@@ -63,27 +57,26 @@ const About = () => {
                             <Label color='black'>Apollo</Label>
                             <Label color='pink'>GraphQL</Label>
                             <Label color='green'>MongoDB</Label>
-                            <Label color='purple'>Heroku</Label>
-                            <Label color='black'>Vercel</Label>
                         </LabelWrapper>
                     </Skill2>
                     <Skill3>
                         <Icon className='fab fa-connectdevelop'></Icon>
-                        <SkillTitle>Web Design</SkillTitle>
+                        <SkillTitle>Development Tools</SkillTitle>
                         <SkillDesc>
                             To create the look, layout, and feature of Web sites
                             and associated applications. Moreover, trying to
-                            make a user-friendly design. Try to use D3.js as
-                            possible because it makes a project look more
-                            dynamic, not only adding graphs about numbers or
-                            figures.
+                            make a user-friendly design and enjoying learning
+                            new stacks and use various tools.
                         </SkillDesc>
                         <Tools>Skills</Tools>
                         <LabelWrapper>
-                            <Label color='orange'>D3.js</Label>
-                            <Label color='purple'>Bootstrap</Label>
                             <Label color='teal'>Semantic UI</Label>
+                            <Label color='blue'>Bootstrap</Label>
                             <Label color='yellow'>styled-components</Label>
+                            <Label color='brown'>Github</Label>
+                            <Label color='purple'>Heroku</Label>
+                            <Label color='black'>Vercel</Label>
+                            <Label color='grey'>Netlify</Label>
                         </LabelWrapper>
                     </Skill3>
                 </Skills>
@@ -188,7 +181,8 @@ const Skills = styled.div`
         -ms-flex-positive: 1;
         flex-grow: 1;
         max-width: 600px;
-        margin-bottom: 3em;
+        // margin-bottom: 3em;
+        margin: -18rem auto 3em auto;
     }
 `;
 const LabelWrapper = styled.div`
@@ -256,8 +250,10 @@ const SkillDesc = styled.p`
     color: var(--clr-dark);
 `;
 const Tools = styled.p`
-    color: var(--clr-accent);
-    font-size: 1.2rem;
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-bold);
+
     padding: 1.5rem;
 
     @media only screen and (max-width: 768px) {

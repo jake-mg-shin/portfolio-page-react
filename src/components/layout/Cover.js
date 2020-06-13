@@ -14,6 +14,7 @@ const Cover = () => {
                     world.
                 </SubText>
             </Container>
+            <br />
         </CoverWrapper>
     );
 };

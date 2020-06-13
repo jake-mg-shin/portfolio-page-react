@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <Container>
             <NavBar>
-                <LogoWrapper href='#' onClick={refreshPage}>
+                <LogoWrapper as='a' href='#' onClick={refreshPage}>
                     <LogoImg src={logo} />
                     <LogoName>Dev.JS</LogoName>
                 </LogoWrapper>
@@ -35,10 +35,13 @@ const Navbar = () => {
 };
 export default Navbar;
 
-const NavBar = styled.div`
+// Style
+const Flex = styled.div`
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+`;
+const NavBar = styled(Flex)`
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -49,9 +52,9 @@ const NavBar = styled.div`
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 1em;
     width: 100%;
     height: auto;
+    margin-top: 1em;
     margin: 0 auto;
 
     @media only screen and (max-width: 480px) {
@@ -61,10 +64,7 @@ const NavBar = styled.div`
         flex-direction: column;
     }
 `;
-const LogoWrapper = styled.a`
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+const LogoWrapper = styled(Flex)`
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -73,8 +73,8 @@ const LogoWrapper = styled.a`
     padding: 1em 0;
 `;
 const LogoImg = styled.img`
-    max-width: 35px;
-    margin-right: 10px;
+    max-width: 25px;
+    margin-right: 5px;
     -webkit-transition: -webkit-transform 0.4s linear;
     transition: -webkit-transform 0.4s linear;
     -o-transition: transform 0.4s linear;
@@ -96,7 +96,7 @@ const LogoImg = styled.img`
     }
 
     @media only screen and (min-width: 800px) {
-        max-width: 45px;
+        max-width: 35px;
     }
 `;
 const LogoName = styled.p`
@@ -105,10 +105,7 @@ const LogoName = styled.p`
     // font-weight: var(--fw-bold);
     color: var(--clr-dark);
 `;
-const Nav = styled.div`
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+const Nav = styled(Flex)`
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
