@@ -100,9 +100,10 @@ const LogoImg = styled.img`
     }
 `;
 const LogoName = styled.p`
-    font-family: 'Monoton', cursive;
+    // font-family: 'Monoton', cursive;
+    font-family: var(--ff-primary);
     font-size: var(--fs-h3);
-    // font-weight: var(--fw-bold);
+    font-weight: var(--fw-bold);
     color: var(--clr-dark);
 `;
 const Nav = styled(Flex)`

@@ -54,14 +54,14 @@ const Project5 = () => {
                                             >
                                                 See Project
                                             </a>
-                                            &nbsp; | <Icon name='github' />{' '}
+                                            {/* &nbsp; | <Icon name='github' />{' '}
                                             <a
                                                 href='https://github.com/jake-mg-shin/apollo-movie-db-app-react'
                                                 target='_blank'
                                                 rel='noopener noreferrer'
                                             >
                                                 See Repo
-                                            </a>
+                                            </a> */}
                                         </div>
                                     </div>
                                     <br />
