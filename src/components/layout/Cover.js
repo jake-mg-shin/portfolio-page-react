@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Container } from 'semantic-ui-react';
 
 const Cover = () => {
@@ -52,11 +52,13 @@ const TitleText = styled.p`
     margin-bottom: 20px;
     padding-top: 100px;
 
-    @media only screen and (max-width: 1024px) {
-        // margin-bottom: 0px;
+    @media only screen and (max-width: 406px) {
+        padding-bottom: 60px;
     }
-    @media only screen and (max-width: 1024px) {
-        padding-top: 50px;
+`;
+const fadeIn = keyframes`
+    100% {
+        opacity: 1;
     }
 `;
 const SubText = styled.p`
@@ -66,14 +68,14 @@ const SubText = styled.p`
     color: var(--clr-dark);
     opacity: 0;
     -webkit-animation: 2s fadein 2s forwards;
-    animation: 2s fadein 2s forwards;
+    animation: 2s ${fadeIn} 2s forwards;
 
-    @keyframes fadein {
-        100% {
-            opacity: 1;
-        }
+    @media only screen and (max-width: 768px) {
+        padding-bottom: 30px;
     }
-
+    @media only screen and (max-width: 424px) {
+        padding-bottom: 60px;
+    }
     @media only screen and (max-width: 406px) {
         display: none;
     }
