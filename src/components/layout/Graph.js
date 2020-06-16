@@ -112,6 +112,7 @@ const Section = styled.div`
     margin: 2rem auto 120px auto;
 
     @media only screen and (max-width: 768px) {
+        max-width: 400px;
         margin: 0.5rem auto 1rem auto;
     }
 `;

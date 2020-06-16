@@ -42,7 +42,7 @@ const CoverWrapper = styled.div`
     background-color: white;
 
     @media only screen and (max-width: 768px) {
-        height: 250px;
+        height: 220px;
     }
 `;
 const TitleText = styled.p`
@@ -52,6 +52,9 @@ const TitleText = styled.p`
     margin-bottom: 20px;
     padding-top: 100px;
 
+    @media only screen and (max-width: 1024px) {
+        // margin-bottom: 0px;
+    }
     @media only screen and (max-width: 1024px) {
         padding-top: 50px;
     }
@@ -69,5 +72,9 @@ const SubText = styled.p`
         100% {
             opacity: 1;
         }
+    }
+
+    @media only screen and (max-width: 406px) {
+        display: none;
     }
 `;

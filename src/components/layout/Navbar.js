@@ -134,4 +134,8 @@ const NavItem = styled.div`
         -o-transition: border 0.5s ease-in-out;
         transition: border 0.5s ease-in-out;
     }
+
+    @media only screen and (max-width: 768px) {
+        padding: 0.4rem;
+    }
 `;
