@@ -26,9 +26,6 @@ const Contact = () => {
                             <Text>
                                 <i className='far fa-arrow-alt-circle-left'></i>
                                 &nbsp; Interested in collaborating or hiring me?
-                                <span role='img' aria-label='smile'>
-                                    😄
-                                </span>
                                 &nbsp;&nbsp;&nbsp;
                                 <i className='far fa-arrow-alt-circle-right'></i>
                             </Text>

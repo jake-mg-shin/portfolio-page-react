@@ -19,7 +19,7 @@ const Project4 = () => {
                         </div>
                         <div>
                             <Icon name='react' />
-                            &nbsp; Built with React.js
+                            &nbsp;Built with React.js
                         </div>
                     </CardDesc>
                     <Fragment>

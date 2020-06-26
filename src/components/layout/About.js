@@ -9,12 +9,14 @@ const About = () => {
                 <Container id='about'>
                     <Title>Glad to meet you!</Title>
                     <Desc>
-                        I have learned the Web Development since last year.
-                        Although I have experienced in the Financial industry
-                        before, I genuinely enjoy building my skills with huge
-                        passion. I am a volunteer as a Web Developer at ARK,
-                        which is a charity for kids who has accessibility, and
-                        looking for opportunities now.
+                        Since last year I have been a full-time student of web
+                        development. I previously worked in the Financial
+                        industry but have now found that my passion lies in
+                        building my skills as a Web Developer. I've used these
+                        skills as a volunteer for ARK, a charity for children
+                        with accessibility challenges. I am now looking for
+                        other opportunities to assist organizations or companies
+                        with what I have learned.
                     </Desc>
                 </Container>
             </BackGround>
@@ -25,10 +27,10 @@ const About = () => {
                         <Icon className='far fa-file-code'></Icon>
                         <SkillTitle>Front-End</SkillTitle>
                         <SkillDesc>
-                            To build interactive Web applications by using
-                            implemented visual elements and always considering
-                            combining with the Server-Side entirely. Love to use
-                            React.js for developing the Client-Side.
+                            To build interactive Web applications using
+                            implemented visual elements while always considering
+                            how it will combine with the entire Server-Side.
+                            Using React.js when developing the Client-Side.
                         </SkillDesc>
                         <Tools>Skills</Tools>
                         <LabelWrapper>
@@ -45,9 +47,9 @@ const About = () => {
                         <SkillTitle>Back-End</SkillTitle>
                         <SkillDesc>
                             To build an effective Server-Side and structure for
-                            combining with the Client-Side properly, also
-                            maintain data and API for an application with
-                            Node.js and Express.js or Apollo-Server and GraphQL.
+                            properly combining with the Client-Side. Maintaining
+                            data and API for an application with Node.js and
+                            Express.js or Apollo-Server and GraphQL.
                         </SkillDesc>
                         <Tools>Skills</Tools>
                         <LabelWrapper>
@@ -61,7 +63,7 @@ const About = () => {
                     </Skill2>
                     <Skill3>
                         <Icon className='fab fa-connectdevelop'></Icon>
-                        <SkillTitle>Development Tools</SkillTitle>
+                        <SkillTitle>Development</SkillTitle>
                         <SkillDesc>
                             To create the look, layout, and feature of Web sites
                             and associated applications. Moreover, trying to

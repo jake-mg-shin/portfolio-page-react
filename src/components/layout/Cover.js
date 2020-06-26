@@ -9,10 +9,7 @@ const Cover = () => {
                 <TitleText>
                     Hi, my name is Jake. <br /> I am a Web Developer.
                 </TitleText>
-                <SubText>
-                    Passionate, Self-Motivated, and Energetic Developer in the
-                    world.
-                </SubText>
+                <SubText>Passionate, Self-motivated, Energetic!</SubText>
             </Container>
             <br />
         </CoverWrapper>

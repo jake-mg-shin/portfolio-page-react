@@ -14,11 +14,11 @@ const Project1 = () => {
                     <CardDesc>
                         <div>
                             <Icon name='arrow circle right' />
-                            &nbsp;Managing daily To-Do
+                            &nbsp;Managing daily activity
                         </div>
                         <div>
                             <Icon name='js square' />
-                            &nbsp; Built with Vanilla JavaScript
+                            &nbsp;Built with Vanilla JavaScript
                         </div>
                     </CardDesc>
                     <Fragment>

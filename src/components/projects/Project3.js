@@ -11,16 +11,15 @@ const Project3 = () => {
             <Img src={p3_1} />
             <Overlay>
                 <Content>
-                    <CardTitle>My Community Listing</CardTitle>
+                    <CardTitle>My Community Listings</CardTitle>
                     <CardDesc>
                         <div>
                             <Icon name='arrow circle right' />
-                            &nbsp;A Template for Entrepreneur or Companies in
-                            Realty Market
+                            &nbsp;Provides local listings for community
                         </div>
                         <div>
                             <Icon name='react' />
-                            &nbsp; Built with React.js
+                            &nbsp;Built with React.js
                         </div>
                     </CardDesc>
                     <Fragment>

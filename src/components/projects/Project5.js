@@ -40,7 +40,7 @@ const Project5 = () => {
                                         </div>
                                         <div>
                                             <Icon name='check square' />
-                                            &nbsp; Server-Side is built with
+                                            &nbsp;Server-Side is built with
                                             Apollo-Server and GraphQL.
                                         </div>
                                         <br />
